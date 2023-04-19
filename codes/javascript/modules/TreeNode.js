@@ -35,7 +35,7 @@ function arrToTree(arr) {
         let node = queue.shift();
         if (++i >= arr.length) break;
         if (arr[i] !== null) {
-            node.left = new TreeNode(arr[i]);
+            node.left = new TreeNode(arr[i])
             queue.push(node.left);
         }
         if (++i >= arr.length) break;
